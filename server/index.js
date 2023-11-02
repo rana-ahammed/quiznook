@@ -3,8 +3,10 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import morgan from "morgan";
 import connectDatabase from "./database/db.js";
 import userRoute from "./routes/userRoute.js";
+import quizRoute from "./routes/quizRoute.js";
 
 dotenv.config();
 const app = express();
@@ -13,6 +15,7 @@ connectDatabase();
 app.use(express.json({ limit: "50mb" }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(morgan("tiny"));
 app.use(cookieParser());
 const corsConfig = {
 	credentials: true,
@@ -21,6 +24,7 @@ const corsConfig = {
 app.use(cors(corsConfig));
 
 app.use("/", userRoute);
+app.use("/", quizRoute);
 
 app.get("/", (req, res) => {
 	res.send("Server is working");
