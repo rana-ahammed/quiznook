@@ -4,6 +4,7 @@ import jwt from "jsonwebtoken";
 const isAuthenticated = async (req, res, next) => {
 	try {
 		const { jwtToken } = req.cookies;
+		console.log(jwtToken, "jwtToken, isAuthenticated");
 		if (!jwtToken)
 			return res.status(401).json({ message: "Please Login First" });
 

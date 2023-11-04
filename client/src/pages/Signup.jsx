@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 
@@ -8,6 +8,7 @@ const Signup = () => {
 	const [username, setUsername] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const navigate = useNavigate();
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -19,6 +20,7 @@ const Signup = () => {
 			)
 			.then((res) => {
 				toast.success(res.data.message);
+				navigate("/quiz");
 				setUsername("");
 				setEmail("");
 				setPassword("");

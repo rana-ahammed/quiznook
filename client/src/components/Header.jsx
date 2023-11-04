@@ -60,7 +60,9 @@ const Header = () => {
 						<NavLink
 							to="/home"
 							className={({ isActive }) =>
-								isActive ? "text-sky-500" : "dark:text-white"
+								isActive
+									? "text-sky-500"
+									: "dark:text-white hover:text-sky-500"
 							}
 						>
 							Home
@@ -68,7 +70,9 @@ const Header = () => {
 						<NavLink
 							to="/quiz"
 							className={({ isActive }) =>
-								isActive ? "text-sky-500" : "dark:text-white"
+								isActive
+									? "text-sky-500"
+									: "dark:text-white  hover:text-sky-500"
 							}
 						>
 							Quiz
@@ -76,7 +80,9 @@ const Header = () => {
 						<NavLink
 							to="/login"
 							className={({ isActive }) =>
-								isActive ? "text-sky-500" : "dark:text-white"
+								isActive
+									? "text-sky-500"
+									: "dark:text-white hover:text-sky-500"
 							}
 						>
 							Login

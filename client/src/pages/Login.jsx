@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 const Login = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const navigate = useNavigate();
 
 	const config = {
 		withCredentials: true,
@@ -23,6 +24,7 @@ const Login = () => {
 			)
 			.then((res) => {
 				toast.success(res.data.message);
+				navigate("/quiz");
 				setEmail("");
 				setPassword("");
 			})

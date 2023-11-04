@@ -12,11 +12,11 @@ dotenv.config();
 const app = express();
 connectDatabase();
 
+app.use(cookieParser());
 app.use(express.json({ limit: "50mb" }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("tiny"));
-app.use(cookieParser());
 const corsConfig = {
 	credentials: true,
 	origin: `${process.env.CLIENT_URL}`,

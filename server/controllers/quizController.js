@@ -1,5 +1,6 @@
 import Quiz from "../models/QuizModel.js";
 import { quizData } from "../database/quizData.js";
+import jwt from "jsonwebtoken";
 
 export const setQuiz = async (req, res) => {
 	try {
@@ -17,8 +18,7 @@ export const setQuiz = async (req, res) => {
 export const getQuiz = async (req, res) => {
 	try {
 		const questions = await Quiz.find();
-		console.log(questions);
-		res.status(200).json({ message: "Successful" });
+		res.status(200).json({ questions, message: "Successful" });
 	} catch (error) {
 		res.status(500).json({ message: error.message });
 	}

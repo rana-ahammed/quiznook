@@ -1,9 +1,12 @@
 import express from "express";
 import { setQuiz, getQuiz } from "../controllers/quizController.js";
+import isAuthenticated from "../middlewares/auth.js";
 
 const router = express.Router();
 
-router.post("/quiz", setQuiz);
-router.get("/quiz", getQuiz);
+router
+	.route("/quiz")
+	.post(isAuthenticated, setQuiz)
+	.get(isAuthenticated, getQuiz);
 
 export default router;
