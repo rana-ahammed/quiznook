@@ -35,11 +35,12 @@ const Quiz = () => {
 		setTimeout(() => setCounter(counter - 1), 1000);
 
 	useEffect(() => {
-		axios.defaults.withCredentials = true;
-
 		const getQuestions = async () => {
 			await axios
-				.get(`${process.env.REACT_APP_SERVER_URL}/quiz`)
+				.get(`${process.env.REACT_APP_SERVER_URL}/quiz`, {
+					withCredentials: true,
+					headers: { "Content-Type": "application/json" },
+				})
 				.then((res) => {
 					setQuestions(res.data.questions[0].quizData);
 					setIsLoading(false);
