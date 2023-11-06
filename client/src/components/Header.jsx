@@ -179,12 +179,14 @@ const Header = () => {
 					Quiz
 				</NavLink>
 				{loggedIn && (
-					<button
-						onClick={handleLogout}
-						className="bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
-					>
-						Logout
-					</button>
+					<div onClick={() => setIsNavOpen(false)}>
+						<button
+							onClick={handleLogout}
+							className="bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
+						>
+							Logout
+						</button>
+					</div>
 				)}
 				{!loggedIn && (
 					<NavLink
