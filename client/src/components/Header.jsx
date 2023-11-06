@@ -201,7 +201,7 @@ const Header = () => {
 						Log in
 					</NavLink>
 				)}
-				{!document.cookie && (
+				{!loggedIn && (
 					<NavLink
 						onClick={() => setIsNavOpen(false)}
 						to="/signup"
