@@ -55,6 +55,7 @@ const Header = () => {
 			.then((res) => {
 				toast.success(res.data.message);
 				localStorage.removeItem("isLoggedIn");
+				navigate("/home");
 			})
 			.catch((error) => toast.error(error.response.data.message));
 	};
