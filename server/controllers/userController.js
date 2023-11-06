@@ -94,7 +94,12 @@ export const login = async (req, res) => {
 
 export const logout = async (req, res) => {
 	try {
-		const options = { expires: new Date(Date.now()), httpOnly: false };
+		const options = {
+			expires: new Date(Date.now()),
+			httpOnly: false,
+			sameSite: "none",
+			secure: true,
+		};
 		res.status(200)
 			.cookie("jwtToken", null, options)
 			.json({ message: "Logout is successful" });

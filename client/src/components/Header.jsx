@@ -52,9 +52,11 @@ const Header = () => {
 
 		axios
 			.get(`${process.env.REACT_APP_SERVER_URL}/logout`, config)
-			.then((res) => toast.success(res.data.message))
+			.then((res) => {
+				toast.success(res.data.message);
+				localStorage.removeItem("isLoggedIn");
+			})
 			.catch((error) => toast.error(error.response.data.message));
-		localStorage.removeItem("isLoggedIn");
 		navigate("/home");
 	};
 	return (
