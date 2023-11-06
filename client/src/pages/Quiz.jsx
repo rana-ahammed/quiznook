@@ -57,6 +57,17 @@ const Quiz = () => {
 			<h1 className="text-3xl font-bold text-center text-black dark:text-white pt-10">
 				React Quiz
 			</h1>
+			{isLoading && (
+				<div className="flex justify-center items-center mt-20">
+					<div
+						className="animate-spin w-10 h-10 border-[3px] border-current border-t-transparent text-sky-500 rounded-full"
+						role="status"
+						aria-label="loading"
+					>
+						<span className="sr-only">Loading...</span>
+					</div>
+				</div>
+			)}
 			<div
 				className={`${
 					isLoading
