@@ -20,6 +20,7 @@ app.use(morgan("tiny"));
 const corsConfig = {
 	credentials: true,
 	origin: `${process.env.CLIENT_URL}`,
+	sameSite: none,
 };
 app.use(cors(corsConfig));
 
