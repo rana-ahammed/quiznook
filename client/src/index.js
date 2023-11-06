@@ -14,19 +14,14 @@ import Login from "./pages/Login";
 import Quiz from "./pages/Quiz";
 import NotFound from "./pages/NotFound";
 
+const loggedIn = localStorage.getItem("isLoggedIn");
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<App />}>
 			<Route path="/" element={<Home />} />
-			<Route path="/home" element={!document.cookie && <Home />} />
-			<Route
-				path="/signup"
-				element={document.cookie ? <Home /> : <Signup />}
-			/>
-			<Route
-				path="/login"
-				element={document.cookie ? <Home /> : <Login />}
-			/>
+			<Route path="/home" element={<Home />} />
+			<Route path="/signup" element={loggedIn ? <Home /> : <Signup />} />
+			<Route path="/login" element={loggedIn ? <Home /> : <Login />} />
 			<Route path="/quiz" element={<Quiz />} />
 			<Route path="*" element={<NotFound />} />
 		</Route>

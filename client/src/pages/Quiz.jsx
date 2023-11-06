@@ -44,6 +44,7 @@ const Quiz = () => {
 				.then((res) => {
 					setQuestions(res.data.questions[0].quizData);
 					setIsLoading(false);
+					localStorage.setItem("isLoggedIn", true);
 				})
 				.catch((error) => {
 					toast.error(error.response.data.message);

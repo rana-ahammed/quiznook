@@ -53,8 +53,8 @@ const Header = () => {
 			.get(`${process.env.REACT_APP_SERVER_URL}/logout`, config)
 			.then((res) => toast.success(res.data.message))
 			.catch((error) => toast.error(error.response.data.message));
+		localStorage.removeItem("isLoggedIn");
 		navigate("/home");
-		window.location.reload();
 	};
 	return (
 		<>
