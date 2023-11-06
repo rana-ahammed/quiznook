@@ -57,7 +57,6 @@ const Header = () => {
 				localStorage.removeItem("isLoggedIn");
 			})
 			.catch((error) => toast.error(error.response.data.message));
-		navigate("/home");
 	};
 	return (
 		<>
@@ -181,7 +180,7 @@ const Header = () => {
 				</NavLink>
 				{loggedIn && (
 					<button
-						onClick={handleLogout}
+						onClick={(prev) => setIsNavOpen(!prev) && handleLogout}
 						to="/login"
 						className="bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
 					>
