@@ -181,7 +181,6 @@ const Header = () => {
 				{loggedIn && (
 					<button
 						onClick={(prev) => setIsNavOpen(!prev) && handleLogout}
-						to="/login"
 						className="bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
 					>
 						Logout
