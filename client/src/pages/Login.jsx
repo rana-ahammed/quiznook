@@ -25,6 +25,7 @@ const Login = () => {
 			.then((res) => {
 				toast.success(res.data.message);
 				navigate("/quiz");
+				localStorage.setItem("isLoggedIn", true);
 				setEmail("");
 				setPassword("");
 			})
