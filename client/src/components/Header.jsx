@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Header = () => {
+	const navigate = useNavigate();
 	const [isDark, setIsDark] = useState(true);
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -39,6 +42,20 @@ const Header = () => {
 			setLight();
 		}
 	}, []);
+
+	const handleLogout = () => {
+		const config = {
+			headers: { "Content-Type": "application/json" },
+			withCredentials: true,
+		};
+
+		axios
+			.get(`${process.env.REACT_APP_SERVER_URL}/logout`, config)
+			.then((res) => toast.success(res.data.message))
+			.catch((error) => toast.error(error.response.data.message));
+		navigate("/home");
+		window.location.reload();
+	};
 	return (
 		<>
 			<header className="bg-white dark:bg-gray-800 z-50 sticky top-0 shadow-lg">
@@ -77,26 +94,38 @@ const Header = () => {
 						>
 							Quiz
 						</NavLink>
-						<NavLink
-							to="/login"
-							className={({ isActive }) =>
-								isActive
-									? "text-sky-500"
-									: "dark:text-white hover:text-sky-500"
-							}
-						>
-							Login
-						</NavLink>
-						<NavLink
-							to="/signup"
-							className={({ isActive }) =>
-								isActive
-									? "text-white bg-sky-500 p-2 rounded-lg"
-									: "dark:text-white text-white bg-sky-500 p-2 rounded-lg"
-							}
-						>
-							Sign up
-						</NavLink>
+						{document.cookie && (
+							<button
+								onClick={handleLogout}
+								className="dark:text-white hover:text-sky-500"
+							>
+								Logout
+							</button>
+						)}
+						{!document.cookie && (
+							<NavLink
+								to="/login"
+								className={({ isActive }) =>
+									isActive
+										? "text-sky-500"
+										: "dark:text-white hover:text-sky-500"
+								}
+							>
+								Login
+							</NavLink>
+						)}
+						{!document.cookie && (
+							<NavLink
+								to="/signup"
+								className={({ isActive }) =>
+									isActive
+										? "text-white bg-sky-500 p-2 rounded-lg"
+										: "dark:text-white text-white bg-sky-500 p-2 rounded-lg"
+								}
+							>
+								Sign up
+							</NavLink>
+						)}
 						<button onClick={toggleMode} className="outline-none">
 							{isDark ? (
 								<HiOutlineSun className="hover:text-sky-500" />
@@ -147,28 +176,41 @@ const Header = () => {
 				>
 					Quiz
 				</NavLink>
-				<NavLink
-					onClick={() => setIsNavOpen(false)}
-					to="/login"
-					className={({ isActive }) =>
-						isActive
-							? "bg-sky-600 text-white p-2 rounded-lg"
-							: "bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
-					}
-				>
-					Log in
-				</NavLink>
-				<NavLink
-					onClick={() => setIsNavOpen(false)}
-					to="/signup"
-					className={({ isActive }) =>
-						isActive
-							? "bg-sky-600 text-white p-2 rounded-lg"
-							: "bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
-					}
-				>
-					Sign up
-				</NavLink>
+				{document.cookie && (
+					<button
+						onClick={handleLogout}
+						to="/login"
+						className="bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
+					>
+						Log in
+					</button>
+				)}
+				{!document.cookie && (
+					<NavLink
+						onClick={() => setIsNavOpen(false)}
+						to="/login"
+						className={({ isActive }) =>
+							isActive
+								? "bg-sky-600 text-white p-2 rounded-lg"
+								: "bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
+						}
+					>
+						Log in
+					</NavLink>
+				)}
+				{!document.cookie && (
+					<NavLink
+						onClick={() => setIsNavOpen(false)}
+						to="/signup"
+						className={({ isActive }) =>
+							isActive
+								? "bg-sky-600 text-white p-2 rounded-lg"
+								: "bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
+						}
+					>
+						Sign up
+					</NavLink>
+				)}
 				<button
 					onClick={toggleMode}
 					className="bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg outline-none border-none"

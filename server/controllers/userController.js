@@ -43,6 +43,7 @@ export const signup = async (req, res) => {
 			return res
 				.status(201)
 				.cookie("jwtToken", jwtToken, options)
+
 				.json({ message: "You signed up successfully" });
 		}
 	} catch (error) {
@@ -90,7 +91,7 @@ export const login = async (req, res) => {
 
 export const logout = async (req, res) => {
 	try {
-		const options = { expires: new Date(Date.now()), httpOnly: true };
+		const options = { expires: new Date(Date.now()), httpOnly: false };
 		res.status(200)
 			.cookie("jwtToken", null, options)
 			.json({ message: "Logout is successful" });
@@ -98,12 +99,3 @@ export const logout = async (req, res) => {
 		return res.status(500).json({ message: error.message });
 	}
 };
-
-// export const getLoggedInUserDetails = async (req, res) => {
-// 	try {
-// 		const user = await User.findById(req.user._id);
-// 		res.status(200).json({ user });
-// 	} catch (error) {
-// 		res.status(500).json({ message: error.message });
-// 	}
-// };

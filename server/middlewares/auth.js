@@ -6,7 +6,9 @@ const isAuthenticated = async (req, res, next) => {
 		const { jwtToken } = req.cookies;
 		console.log(jwtToken, "jwtToken, isAuthenticated");
 		if (!jwtToken)
-			return res.status(401).json({ message: "Please Login First" });
+			return res
+				.status(401)
+				.json({ message: "Please Login First to Attend Quiz" });
 
 		const decoded = jwt.verify(jwtToken, process.env.JWT_SECRET);
 		req.user = await User.findById({ _id: decoded._id });

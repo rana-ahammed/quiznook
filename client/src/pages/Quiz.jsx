@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { LuAlarmClock } from "react-icons/lu";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const Quiz = () => {
+	const navigate = useNavigate();
 	const [questions, setQuestions] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 
@@ -33,14 +35,23 @@ const Quiz = () => {
 		setTimeout(() => setCounter(counter - 1), 1000);
 
 	useEffect(() => {
-		axios
-			.get(`${process.env.REACT_APP_SERVER_URL}/quiz`)
-			.then((res) => {
-				setQuestions(res.data.questions[0].quizData);
-				setIsLoading(false);
-			})
-			.catch((error) => toast.error(error.response.data.message));
-	}, []);
+		axios.defaults.withCredentials = true;
+
+		const getQuestions = async () => {
+			await axios
+				.get(`${process.env.REACT_APP_SERVER_URL}/quiz`)
+				.then((res) => {
+					setQuestions(res.data.questions[0].quizData);
+					setIsLoading(false);
+				})
+				.catch((error) => {
+					toast.error(error.response.data.message);
+					navigate("/login");
+					console.clear();
+				});
+		};
+		getQuestions();
+	}, [navigate]);
 
 	return (
 		<section className="min-h-[calc(100vh-72px)] bg-white dark:bg-gray-800">
