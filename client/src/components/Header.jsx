@@ -42,6 +42,7 @@ const Header = () => {
 			setLight();
 		}
 	}, []);
+	const loggedIn = localStorage.getItem("isLoggedIn");
 
 	const handleLogout = () => {
 		const config = {
@@ -94,7 +95,7 @@ const Header = () => {
 						>
 							Quiz
 						</NavLink>
-						{document.cookie && (
+						{loggedIn && (
 							<button
 								onClick={handleLogout}
 								className="dark:text-white hover:text-sky-500"
@@ -102,7 +103,7 @@ const Header = () => {
 								Logout
 							</button>
 						)}
-						{!document.cookie && (
+						{!loggedIn && (
 							<NavLink
 								to="/login"
 								className={({ isActive }) =>
@@ -114,7 +115,7 @@ const Header = () => {
 								Login
 							</NavLink>
 						)}
-						{!document.cookie && (
+						{!loggedIn && (
 							<NavLink
 								to="/signup"
 								className={({ isActive }) =>
@@ -176,7 +177,7 @@ const Header = () => {
 				>
 					Quiz
 				</NavLink>
-				{document.cookie && (
+				{loggedIn && (
 					<button
 						onClick={handleLogout}
 						to="/login"
@@ -185,7 +186,7 @@ const Header = () => {
 						Log in
 					</button>
 				)}
-				{!document.cookie && (
+				{!loggedIn && (
 					<NavLink
 						onClick={() => setIsNavOpen(false)}
 						to="/login"
