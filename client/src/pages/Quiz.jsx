@@ -47,7 +47,6 @@ const Quiz = () => {
 				.catch((error) => {
 					toast.error(error.response.data.message);
 					navigate("/login");
-					console.clear();
 				});
 		};
 		getQuestions();
