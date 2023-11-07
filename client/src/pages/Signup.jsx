@@ -21,6 +21,7 @@ const Signup = () => {
 			.then((res) => {
 				toast.success(res.data.message);
 				navigate("/quiz");
+				localStorage.setItem("isLoggedIn", true);
 				setUsername("");
 				setEmail("");
 				setPassword("");
