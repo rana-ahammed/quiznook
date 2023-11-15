@@ -41,7 +41,12 @@ const Home = () => {
 							className="rounded-lg"
 						>
 							<source src={homevideo} type="video/mp4" />
-							<track kind="captions" />
+							<track
+								src="captions_en.vtt"
+								kind="captions"
+								srclang="en"
+								label="english_captions"
+							/>
 						</video>
 					</div>
 				</div>
