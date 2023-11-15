@@ -27,7 +27,7 @@ const Home = () => {
 						</p>
 						<Link
 							to="/quiz"
-							className="bg-sky-500 hover:bg-sky-600 px-4 md:px-24 py-2 rounded-lg text-white font-bold text-lg md:text-xl mb-4 lg:text-center xl:text-2xl min-[320px]:-mb-20"
+							className="bg-sky-600 hover:bg-sky-700 px-4 md:px-24 py-2 rounded-lg text-white font-bold text-lg md:text-xl mb-4 lg:text-center xl:text-2xl min-[320px]:-mb-20"
 						>
 							Test Your Skill
 						</Link>
