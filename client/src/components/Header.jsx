@@ -66,11 +66,11 @@ const Header = () => {
 					<NavLink
 						to="/"
 						className={({ isActive }) =>
-							isActive ? "flex gap-2 text-sky-500" : "flex gap-2"
+							isActive ? "flex gap-2 text-sky-400" : "flex gap-2"
 						}
 					>
 						<img className="w-10 h-10" src={logo} alt="logo" />
-						<button className="text-3xl font-extrabold font-sans hover:text-sky-500 dark:text-white dark:hover:text-sky-500">
+						<button className="text-3xl font-extrabold font-sans hover:text-sky-400 dark:text-white dark:hover:text-sky-500">
 							QUIZO
 						</button>
 					</NavLink>
@@ -81,7 +81,7 @@ const Header = () => {
 							to="/home"
 							className={({ isActive }) =>
 								isActive
-									? "text-sky-500"
+									? "text-sky-400"
 									: "dark:text-white hover:text-sky-500"
 							}
 						>
@@ -91,7 +91,7 @@ const Header = () => {
 							to="/quiz"
 							className={({ isActive }) =>
 								isActive
-									? "text-sky-500"
+									? "text-sky-400"
 									: "dark:text-white  hover:text-sky-500"
 							}
 						>
@@ -110,7 +110,7 @@ const Header = () => {
 								to="/login"
 								className={({ isActive }) =>
 									isActive
-										? "text-sky-500"
+										? "text-sky-400"
 										: "dark:text-white hover:text-sky-500"
 								}
 							>
@@ -122,8 +122,8 @@ const Header = () => {
 								to="/signup"
 								className={({ isActive }) =>
 									isActive
-										? "text-black bg-sky-700 p-2 rounded-lg"
-										: "dark:text-white text-black bg-sky-700 p-2 rounded-lg"
+										? "text-black bg-sky-400 p-2 rounded-lg"
+										: "dark:text-white text-black bg-sky-400 p-2 rounded-lg"
 								}
 							>
 								Sign up
