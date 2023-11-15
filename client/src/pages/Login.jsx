@@ -75,7 +75,7 @@ const Login = () => {
 						className="bg-gray-200 dark:bg-slate-600 dark:border-none rounded-lg p-2 focus:outline-none border-2 focus:border-sky-400 text-lg font-semibold text-gray-800 dark:text-gray-200"
 					/>
 				</div>
-				<button className="bg-sky-500 hover:bg-sky-400 p-2 rounded-lg text-white font-bold text-xl mt-2">
+				<button className="bg-sky-400 hover:bg-sky-500 p-2 rounded-lg text-black font-bold text-xl mt-2">
 					Log in
 				</button>
 				<Link

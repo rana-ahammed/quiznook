@@ -85,7 +85,7 @@ const Signup = () => {
 						value={password}
 					/>
 				</div>
-				<button className="bg-sky-500 hover:bg-sky-400 p-2 mt-4 text-white text-xl font-semibold font-sans rounded-lg">
+				<button className="bg-sky-400 hover:bg-sky-500 p-2 mt-4 text-black text-xl font-semibold font-sans rounded-lg">
 					Create Account
 				</button>
 				<Link

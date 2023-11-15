@@ -122,8 +122,8 @@ const Header = () => {
 								to="/signup"
 								className={({ isActive }) =>
 									isActive
-										? "text-white bg-sky-700 p-2 rounded-lg"
-										: "dark:text-white text-white bg-sky-700 p-2 rounded-lg"
+										? "text-black bg-sky-700 p-2 rounded-lg"
+										: "dark:text-white text-black bg-sky-700 p-2 rounded-lg"
 								}
 							>
 								Sign up
@@ -209,7 +209,7 @@ const Header = () => {
 						to="/signup"
 						className={({ isActive }) =>
 							isActive
-								? "bg-sky-600 text-white p-2 rounded-lg"
+								? "bg-sky-600 text-black p-2 rounded-lg"
 								: "bg-gray-200 dark:bg-slate-600 hover:bg-gray-300 dark:hover:bg-slate-700 text-black dark:text-white p-2 rounded-lg"
 						}
 					>
