@@ -122,8 +122,8 @@ const Header = () => {
 								to="/signup"
 								className={({ isActive }) =>
 									isActive
-										? "text-white bg-sky-500 p-2 rounded-lg"
-										: "dark:text-white text-white bg-sky-500 p-2 rounded-lg"
+										? "text-white bg-sky-700 p-2 rounded-lg"
+										: "dark:text-white text-white bg-sky-700 p-2 rounded-lg"
 								}
 							>
 								Sign up
@@ -143,6 +143,7 @@ const Header = () => {
 					<button
 						onClick={() => setIsNavOpen((prev) => !prev)}
 						className="md:hidden outline-none border-none"
+						aria-label="hamburger-menu"
 					>
 						{isNavOpen ? (
 							<RxCross2 className="w-8 h-8 dark:text-white hover:text-sky-400 dark:hover:text-sky-400" />

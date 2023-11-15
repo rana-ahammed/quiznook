@@ -39,6 +39,7 @@ const Home = () => {
 							autoPlay=" "
 							muted
 							className="rounded-lg"
+							kind="captions"
 						>
 							<source src={homevideo} type="video/mp4" />
 						</video>

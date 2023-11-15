@@ -10,13 +10,22 @@ const Footer = () => {
 				All Rights Reserved By @Quizo
 			</p>
 			<div className="flex gap-10 justify-center text-xl mt-4">
-				<Link to="mailto:business.ranaahammed@gmail.com">
+				<Link
+					to="mailto:business.ranaahammed@gmail.com"
+					aria-label="email address link"
+				>
 					<MdEmail className="hover:scale-150" />
 				</Link>
-				<Link to="https://twitter.com/rana_ahammed_">
+				<Link
+					to="https://twitter.com/rana_ahammed_"
+					aria-label="twitter profile link"
+				>
 					<BsTwitter className="hover:scale-150" />
 				</Link>
-				<Link to="https://github.com/rana-ahammed">
+				<Link
+					to="https://github.com/rana-ahammed"
+					aria-label="github profile link"
+				>
 					<FaGithubSquare className="hover:scale-150" />
 				</Link>
 			</div>
