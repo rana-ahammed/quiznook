@@ -123,7 +123,7 @@ const Header = () => {
 								className={({ isActive }) =>
 									isActive
 										? "text-black bg-sky-400 p-2 rounded-lg"
-										: "dark:text-white text-black bg-sky-400 p-2 rounded-lg"
+										: "text-black bg-sky-400 p-2 rounded-lg"
 								}
 							>
 								Sign up
