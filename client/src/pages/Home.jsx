@@ -9,9 +9,9 @@ const Home = () => {
 					<div className="order-2 lg:order-1 text-center md:-mt-12 lg:mt-24 xl:mt-32 font-bold mt-8">
 						<p className="text-4xl lg:text-5xl lg:text-center dark:text-white">
 							Test Your{" "}
-							<span className="text-sky-500">Knowledge</span>
+							<span className="text-blue-500">Knowledge</span>
 							<br />{" "}
-							<span className="text-red-500">
+							<span className="text-black">
 								Welcome to the
 							</span>{" "}
 							<span className="text-black text-5xl font-extrabold font-sans dark:text-white">

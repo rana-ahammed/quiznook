@@ -63,12 +63,7 @@ const Header = () => {
 		<>
 			<header className="bg-white dark:bg-gray-800 z-50 sticky top-0 shadow-lg">
 				<nav className="max-w-6xl mx-auto flex justify-between items-center p-4">
-					<NavLink
-						to="/"
-						className={({ isActive }) =>
-							isActive ? "flex gap-2 text-sky-400" : "flex gap-2"
-						}
-					>
+					<NavLink to="/" className="flex gap-2 text-black">
 						<img className="w-10 h-10" src={logo} alt="logo" />
 						<button className="text-3xl font-extrabold font-sans hover:text-sky-400 dark:text-white dark:hover:text-sky-500">
 							QUIZO
