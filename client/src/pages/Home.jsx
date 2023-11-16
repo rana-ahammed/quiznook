@@ -11,7 +11,7 @@ const Home = () => {
 							Test Your{" "}
 							<span className="text-blue-500">Knowledge</span>
 							<br />{" "}
-							<span className="text-black">
+							<span className="text-black dark:text-white">
 								Welcome to the
 							</span>{" "}
 							<span className="text-black text-5xl font-extrabold font-sans dark:text-white">
