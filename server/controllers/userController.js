@@ -97,8 +97,6 @@ export const logout = async (req, res) => {
 		const options = {
 			expires: new Date(Date.now()),
 			httpOnly: false,
-			sameSite: "None",
-			secure: true,
 		};
 		res.status(200)
 			.cookie("jwtToken", null, options)
