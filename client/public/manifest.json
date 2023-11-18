@@ -36,6 +36,55 @@
 			"label": "Quizo Home Page"
 		},
 		{
+			"src": "quizo-login-page-dark.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-signup-page-dark.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-quiz-page-dark.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-home-page-light.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-login-page-light.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-signup-page-light.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-quiz-page-light.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Quizo Home Page"
+		},
+		{
 			"src": "quizo-home-page-dark-mobile.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
