@@ -27,6 +27,12 @@
 			"purpose": "maskable"
 		}
 	],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff",
+	"prefer_related_applications": true,
+	"description": "Quizo is a FREE quiz app. It's simple, reliable and private. You can practice react quiz and gain knowledge.",
 	"screenshots": [
 		{
 			"src": "quizo-home-page-dark.png",
@@ -40,21 +46,21 @@
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quizo Home Page"
+			"label": "Quizo Login Page"
 		},
 		{
 			"src": "quizo-signup-page-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quizo Home Page"
+			"label": "Quizo Signup Page"
 		},
 		{
 			"src": "quizo-quiz-page-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quizo Home Page"
+			"label": "Quizo Quiz Page"
 		},
 		{
 			"src": "quizo-home-page-dark-mobile.png",
@@ -68,26 +74,21 @@
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quizo Home Page"
+			"label": "Quizo Login Page"
 		},
 		{
 			"src": "quizo-signup-page-dark-mobile.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quizo Home Page"
+			"label": "Quizo Signup Page"
 		},
 		{
 			"src": "quizo-quiz-page-dark-mobile.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quizo Home Page"
+			"label": "Quizo Quiz Page"
 		}
-	],
-	"start_url": ".",
-	"display": "standalone",
-	"theme_color": "#000000",
-	"background_color": "#ffffff",
-	"prefer_related_applications": true
+	]
 }
