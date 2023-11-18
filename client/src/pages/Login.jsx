@@ -36,7 +36,6 @@ const Login = () => {
 		<section className="bg-white dark:bg-gray-800 w-full min-h-[calc(100vh-72px)] flex justify-center items-center">
 			<form
 				onSubmit={handleSubmit}
-				autoComplete="off"
 				className="max-w-sm w-full h-3/4 bg-gray-100 dark:bg-slate-700 flex flex-col gap-4 p-4 rounded-md"
 			>
 				<img src={logo} alt="logo" className="w-10 h-10 mx-auto" />
@@ -54,6 +53,7 @@ const Login = () => {
 						type="email"
 						name="email"
 						id="email"
+						autoComplete="off"
 						onChange={(e) => setEmail(e.target.value)}
 						value={email}
 						className="bg-gray-200 dark:bg-slate-600 dark:border-none rounded-lg p-2 focus:outline-none border-2 focus:border-sky-400 text-lg font-semibold text-gray-800 dark:text-gray-200"
@@ -70,6 +70,7 @@ const Login = () => {
 						type="password"
 						name="password"
 						id="password"
+						autoComplete="off"
 						onChange={(e) => setPassword(e.target.value)}
 						value={password}
 						className="bg-gray-200 dark:bg-slate-600 dark:border-none rounded-lg p-2 focus:outline-none border-2 focus:border-sky-400 text-lg font-semibold text-gray-800 dark:text-gray-200"

@@ -34,7 +34,6 @@ const Signup = () => {
 			<form
 				className="w-full h-3/4 max-w-sm bg-gray-100 dark:bg-slate-700 gap-4 p-4 flex flex-col rounded-md z-10"
 				onSubmit={handleSubmit}
-				autoComplete="off"
 			>
 				<img src={logo} alt="logo" className="w-10 h-10 mx-auto" />
 				<h1 className="text-2xl text-center font-bold text-gray-600 dark:text-white">
@@ -53,6 +52,7 @@ const Signup = () => {
 						className="bg-gray-200 dark:border-none dark:bg-slate-600 rounded-lg p-2 focus:outline-none border-2 focus:border-sky-400 text-lg font-semibold text-gray-800 dark:text-gray-200"
 						onChange={(e) => setUsername(e.target.value)}
 						value={username}
+						autoComplete="off"
 					/>
 				</div>
 				<div className="flex flex-col">
@@ -68,6 +68,7 @@ const Signup = () => {
 						className="bg-gray-200 dark:bg-slate-600 dark:border-none rounded-lg p-2 focus:outline-none border-2 focus:border-sky-500 text-lg font-semibold text-gray-800 dark:text-gray-200"
 						onChange={(e) => setEmail(e.target.value)}
 						value={email}
+						autoComplete="off"
 					/>
 				</div>
 				<div className="flex flex-col">
@@ -83,6 +84,7 @@ const Signup = () => {
 						className="bg-gray-200 dark:bg-slate-600 dark:border-none rounded-lg p-2 focus:outline-none border-2 focus:border-sky-400 text-lg font-semibold text-gray-800 dark:text-gray-200"
 						onChange={(e) => setPassword(e.target.value)}
 						value={password}
+						autoComplete="off"
 					/>
 				</div>
 				<button className="bg-sky-400 hover:bg-sky-500 p-2 mt-4 text-black text-xl font-semibold font-sans rounded-lg">
