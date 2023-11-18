@@ -62,6 +62,27 @@
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-login-page-dark-mobile.png",
+			"sizes": "850x1536",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-signup-page-dark-mobile.png",
+			"sizes": "850x1536",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Quizo Home Page"
+		},
+		{
+			"src": "quizo-quiz-page-dark-mobile.png",
+			"sizes": "850x1536",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Quizo Home Page"
 		}
 	],
 	"start_url": ".",
