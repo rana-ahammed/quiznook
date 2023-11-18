@@ -58,7 +58,7 @@
 		},
 		{
 			"src": "quizo-home-page-dark-mobile.png",
-			"sizes": "3264x1836",
+			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quizo Home Page"
