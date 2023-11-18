@@ -44,13 +44,13 @@ const Header = () => {
 	}, []);
 	const loggedIn = localStorage.getItem("isLoggedIn");
 
-	const handleLogout = () => {
+	const handleLogout = async () => {
 		const config = {
 			headers: { "Content-Type": "application/json" },
 			withCredentials: true,
 		};
 
-		axios
+		await axios
 			.get(`${process.env.REACT_APP_SERVER_URL}/logout`, config)
 			.then((res) => {
 				toast.success(res.data.message);
