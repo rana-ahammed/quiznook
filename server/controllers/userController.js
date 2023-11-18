@@ -39,6 +39,7 @@ export const signup = async (req, res) => {
 			const options = {
 				expires: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000),
 				httpOnly: false,
+				sameSite: "Lax",
 			};
 			return res
 				.status(201)
@@ -79,6 +80,7 @@ export const login = async (req, res) => {
 		const options = {
 			expires: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000),
 			httpOnly: false,
+			sameSite: "Lax",
 		};
 		res.status(200)
 			.cookie("jwtToken", jwtToken, options)
@@ -93,6 +95,7 @@ export const logout = async (req, res) => {
 		const options = {
 			expires: new Date(Date.now()),
 			httpOnly: false,
+			sameSite: "Lax",
 		};
 		res.status(200)
 			.cookie("jwtToken", null, options)
