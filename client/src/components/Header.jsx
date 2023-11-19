@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 const Header = () => {
 	const navigate = useNavigate();
-	const [isDark, setIsDark] = useState(true);
+	const [isDark, setIsDark] = useState(false);
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	const setDark = () => {
