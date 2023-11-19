@@ -14,13 +14,11 @@ const Header = () => {
 
 	const setDark = () => {
 		document.documentElement.classList.add("dark");
-		document.documentElement.classList.add("light");
 		localStorage.setItem("theme", "dark");
 		setIsDark(true);
 	};
 
 	const setLight = () => {
-		document.documentElement.classList.add("light");
 		document.documentElement.classList.remove("dark");
 		localStorage.removeItem("theme");
 		setIsDark(false);
