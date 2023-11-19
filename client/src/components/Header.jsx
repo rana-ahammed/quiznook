@@ -12,28 +12,27 @@ const Header = () => {
 	const [isDark, setIsDark] = useState(true);
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
-	function setDark() {
+	const setDark = () => {
 		document.documentElement.classList.add("dark");
-		document.documentElement.classList.remove("light");
+		document.documentElement.classList.add("light");
 		localStorage.setItem("theme", "dark");
 		setIsDark(true);
-	}
+	};
 
-	function setLight() {
+	const setLight = () => {
 		document.documentElement.classList.add("light");
 		document.documentElement.classList.remove("dark");
 		localStorage.removeItem("theme");
 		setIsDark(false);
-	}
+	};
 
-	function toggleMode() {
+	const toggleMode = () => {
 		if (isDark) {
 			setLight();
 		} else {
 			setDark();
 		}
-	}
-
+	};
 	// When the page is loaded or refreshed, check for theme preference
 	useEffect(() => {
 		if (localStorage.getItem("theme") === "dark") {
