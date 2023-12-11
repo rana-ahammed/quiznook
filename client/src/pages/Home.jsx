@@ -15,11 +15,11 @@ const Home = () => {
 								Welcome to the
 							</span>{" "}
 							<span className="text-black text-5xl font-extrabold font-sans dark:text-white">
-								QUIZO!
+								QUIZNOOK!
 							</span>{" "}
 						</p>
 						<p className="font-semibold text-lg md:text-2xl mt-8 text-gray-500 lg:text-center dark:text-gray-200">
-							Join the Quizo community and embark
+							Join the Quiznook community and embark
 						</p>
 						<p className="font-semibold text-lg md:text-2xl mb-4 md:mb-8 text-gray-500 lg:text-center dark:text-gray-200">
 							{" "}

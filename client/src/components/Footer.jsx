@@ -7,7 +7,7 @@ const Footer = () => {
 	return (
 		<div className="bg-gray-100 dark:bg-slate-800 p-6 shadow-lg dark:text-white">
 			<p className="font-sans font-bold text-sm md:text-2xl text-center mb-1">
-				All Rights Reserved By @Quizo
+				All Rights Reserved By @Quiznook
 			</p>
 			<div className="flex gap-10 justify-center text-xl mt-4">
 				<Link

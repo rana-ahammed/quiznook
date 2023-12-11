@@ -63,7 +63,7 @@ const Header = () => {
 					<NavLink to="/" className="flex gap-2 text-black">
 						<img className="w-10 h-10" src={logo} alt="logo" />
 						<button className="text-3xl font-extrabold font-sans hover:text-sky-400 dark:text-white dark:hover:text-sky-500">
-							QUIZO
+							QUIZNOOK
 						</button>
 					</NavLink>
 
