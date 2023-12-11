@@ -53,7 +53,7 @@ const Header = () => {
 				toast.success(res.data.message);
 				localStorage.removeItem("isLoggedIn");
 				navigate("/home");
-				window.reload();
+				window.location.reload();
 			})
 			.catch((error) => toast.error(error.response.data.message));
 	};
