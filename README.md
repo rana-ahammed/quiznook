@@ -1,3 +1,5 @@
+# Quizo is a quiz website.
+
 ## Features of this website
 1. Fully Responsive
 2. Dark Mode
