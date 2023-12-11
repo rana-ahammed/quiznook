@@ -35,56 +35,56 @@
 	"description": "Quiznook is a FREE quiz app. It's simple, reliable, and private. You can practice react quiz and gain knowledge.",
 	"screenshots": [
 		{
-			"src": "quiznook-home-page-dark.png",
+			"src": "quiznook-home-desktop-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
 			"label": "Quiznook Home Page"
 		},
 		{
-			"src": "quiznook-login-page-dark.png",
+			"src": "quiznook-quiz-desktop-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
 			"label": "Quiznook Login Page"
 		},
 		{
-			"src": "quiznook-signup-page-dark.png",
+			"src": "quiznook-signup-desktop-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
 			"label": "Quiznook Signup Page"
 		},
 		{
-			"src": "quiznook-quiz-page-dark.png",
+			"src": "quiznook-login-desktop-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
 			"label": "Quiznook Quiz Page"
 		},
 		{
-			"src": "quiznook-home-page-dark-mobile.png",
+			"src": "quiznook-home-mobile-dark.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quiznook Home Page"
 		},
 		{
-			"src": "quiznook-login-page-dark-mobile.png",
+			"src": "quiznook-quiz-mobile-dark.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quiznook Login Page"
 		},
 		{
-			"src": "quiznook-signup-page-dark-mobile.png",
+			"src": "quiznook-signup-desktop-dark.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quiznook Signup Page"
 		},
 		{
-			"src": "quiznook-quiz-page-dark-mobile.png",
+			"src": "quiznook-login-desktop-dark.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",

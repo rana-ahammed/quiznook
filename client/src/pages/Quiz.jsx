@@ -35,6 +35,7 @@ const Quiz = () => {
 		setTimeout(() => setCounter(counter - 1), 1000);
 
 	useEffect(() => {
+		const loggedIn = localStorage.getItem("isLoggedIn");
 		const getQuestions = async () => {
 			await axios
 				.get(`${process.env.REACT_APP_SERVER_URL}/quiz`, {
@@ -50,7 +51,7 @@ const Quiz = () => {
 					navigate("/login");
 				});
 		};
-		getQuestions();
+		loggedIn && getQuestions();
 	}, [navigate]);
 
 	return (
