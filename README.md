@@ -1,4 +1,4 @@
-# Quizo is a quiz website.
+# Quiznook is a quiz website.
 
 ## Features of this website
 1. Fully Responsive
