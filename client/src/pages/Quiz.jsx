@@ -125,7 +125,6 @@ const Quiz = () => {
 					</div>
 				)}
 			</div>
-			)
 		</section>
 	);
 };
