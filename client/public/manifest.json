@@ -1,6 +1,6 @@
 {
-	"short_name": "Quizo",
-	"name": "Quizo",
+	"short_name": "Quiznook",
+	"name": "Quiznook",
 	"icons": [
 		{
 			"src": "logo192.png",
@@ -32,63 +32,63 @@
 	"theme_color": "#000000",
 	"background_color": "#ffffff",
 	"prefer_related_applications": true,
-	"description": "Quizo is a FREE quiz app. It's simple, reliable and private. You can practice react quiz and gain knowledge.",
+	"description": "Quiznook is a FREE quiz app. It's simple, reliable, and private. You can practice react quiz and gain knowledge.",
 	"screenshots": [
 		{
-			"src": "quizo-home-page-dark.png",
+			"src": "quiznook-home-page-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quizo Home Page"
+			"label": "Quiznook Home Page"
 		},
 		{
-			"src": "quizo-login-page-dark.png",
+			"src": "quiznook-login-page-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quizo Login Page"
+			"label": "Quiznook Login Page"
 		},
 		{
-			"src": "quizo-signup-page-dark.png",
+			"src": "quiznook-signup-page-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quizo Signup Page"
+			"label": "Quiznook Signup Page"
 		},
 		{
-			"src": "quizo-quiz-page-dark.png",
+			"src": "quiznook-quiz-page-dark.png",
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quizo Quiz Page"
+			"label": "Quiznook Quiz Page"
 		},
 		{
-			"src": "quizo-home-page-dark-mobile.png",
+			"src": "quiznook-home-page-dark-mobile.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quizo Home Page"
+			"label": "Quiznook Home Page"
 		},
 		{
-			"src": "quizo-login-page-dark-mobile.png",
+			"src": "quiznook-login-page-dark-mobile.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quizo Login Page"
+			"label": "Quiznook Login Page"
 		},
 		{
-			"src": "quizo-signup-page-dark-mobile.png",
+			"src": "quiznook-signup-page-dark-mobile.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quizo Signup Page"
+			"label": "Quiznook Signup Page"
 		},
 		{
-			"src": "quizo-quiz-page-dark-mobile.png",
+			"src": "quiznook-quiz-page-dark-mobile.png",
 			"sizes": "850x1536",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quizo Quiz Page"
+			"label": "Quiznook Quiz Page"
 		}
 	]
 }
