@@ -46,7 +46,7 @@
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quiznook Login Page"
+			"label": "Quiznook Quiz Page"
 		},
 		{
 			"src": "quiznook-signup-desktop-dark.png",
@@ -60,7 +60,7 @@
 			"sizes": "3264x1836",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Quiznook Quiz Page"
+			"label": "Quiznook Login Page"
 		},
 		{
 			"src": "quiznook-home-mobile.png",
@@ -74,7 +74,7 @@
 			"sizes": "850x1346",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quiznook Login Page"
+			"label": "Quiznook Quiz Page"
 		},
 		{
 			"src": "quiznook-signup-mobile.png",
@@ -88,7 +88,7 @@
 			"sizes": "850x1346",
 			"type": "image/png",
 			"form_factor": "narrow",
-			"label": "Quiznook Quiz Page"
+			"label": "Quiznook Login Page"
 		}
 	]
 }
