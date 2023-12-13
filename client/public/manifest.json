@@ -63,29 +63,29 @@
 			"label": "Quiznook Quiz Page"
 		},
 		{
-			"src": "quiznook-home-mobile-dark.png",
-			"sizes": "850x1560",
+			"src": "quiznook-home-mobile.png",
+			"sizes": "850x1346",
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quiznook Home Page"
 		},
 		{
-			"src": "quiznook-quiz-mobile-dark.png",
-			"sizes": "850x1554",
+			"src": "quiznook-quiz-mobile.png",
+			"sizes": "850x1346",
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quiznook Login Page"
 		},
 		{
-			"src": "quiznook-signup-mobile-dark.png",
-			"sizes": "850x1554",
+			"src": "quiznook-signup-mobile.png",
+			"sizes": "850x1346",
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quiznook Signup Page"
 		},
 		{
-			"src": "quiznook-login-mobile-dark.png",
-			"sizes": "850x1554",
+			"src": "quiznook-login-mobile.png",
+			"sizes": "850x1346",
 			"type": "image/png",
 			"form_factor": "narrow",
 			"label": "Quiznook Quiz Page"
